@@ -92,3 +92,7 @@ def has_no_container_providers():
 def has_no_middleware_providers():
     """Clear all middleware providers."""
     providers.clear_middleware_providers()
+
+@pytest.fixture
+def setup_middleware_providers():
+    providers.setup_middleware_providers()
